@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for the custom dropdown */
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style for the dropdown button */
+    .dropdown-button {
+      padding: 5px 10px;
+      cursor: pointer;
+      background-image: url('down-icon.png'); /* Add an arrow-down image */
+      background-repeat: no-repeat;
+      background-position: right center;
+      border: 1px solid #ccc;
+      z-index: 1;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px; /* Wider to accommodate two images */
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    
+
+    /* Style for dropdown options */
+    .dropdown-option {
+      display: flex; /* Use flex layout to align images side by side */
+      align-items: center; /* Vertically center content */
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Style for the left image in the option */
+    .dropdown-image-left {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    /* Style for the right image in the option */
+    .dropdown-image-right {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Hover effect for dropdown options */
+    .dropdown-option:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown content when the button is hovered */
+    .custom-dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-dropdown">
+  <div class="dropdown-button">
+    <a href="#" class="dropdown-option">
+        <img src="Lang-img.png" class="dropdown-image-left">
+        <img src="down-icon.png" class="dropdown-image-right">
+      </a>
+  </div>
+</div>
+
+</body>
+</html>
